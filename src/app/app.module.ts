@@ -2,13 +2,23 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
+import { InicioComponent } from './componentes/inicio/inicio.component';
+import { MenuComponent } from './componentes/menu/menu.component';
+import { NavbarComponent } from './componentes/navbar/navbar.component';
+import { LenguajesComponent } from './componentes/lenguajes/lenguajes.component';
+import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    InicioComponent,
+    MenuComponent,
+    NavbarComponent,
+    LenguajesComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
